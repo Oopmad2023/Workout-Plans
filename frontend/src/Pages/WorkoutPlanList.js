@@ -76,7 +76,7 @@ const WorkoutPlanList = () => {
 
       {showUpdateForm && (
         <div>
-          <h2>Update Workout Plan</h2>
+          <h2>Update Workout shedule</h2>
           <input
             type="text"
             value={updatedWorkoutPlan.title}
