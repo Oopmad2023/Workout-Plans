@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import axios from 'axios';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const WorkoutPlansPage = () => {
@@ -50,7 +50,7 @@ const WorkoutPlansPage = () => {
       <div className="form">
         <h1>Create Workout Plan</h1>
         {showSuccessMessage && <div className="success-message">Workout plan added successfully!</div>}
-        <form onSubmit={handleSubmit} className="form">
+        <form onSubmit={Submit} className="form">
           <label>Title:</label>
           <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder=" Enter title" />
           <label>Description:</label>
