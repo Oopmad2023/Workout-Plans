@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 
 const WorkoutPlanList = () => {
   const [workoutPlans, setWorkoutPlans] = useState([]);
@@ -69,7 +69,7 @@ const WorkoutPlanList = () => {
               </ul>
             </div>
             <button onClick={() => handleDelete(workoutPlan.id)}>Delete</button>
-            <button onClick={() => handleUpdate(workoutPlan)} style={{ backgroundColor: '#28a745', color: '#fff' }}>Update</button>
+            <button onClick={() => update(workoutPlan)} style={{ backgroundColor: '#28a745', color: '#fff' }}>Update</button>
           </li>
         ))}
       </ul>
